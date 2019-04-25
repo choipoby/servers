@@ -170,15 +170,16 @@ var httpServer = http.createServer(handleHttpRequest).listen(definitions.HTTP_PO
 // --------------------------------------------------------------------------------------------- //
 // ----------------
 // RSA cert setting
+/*
 var rsaOptions = {
-    key: fs.readFileSync('tls.testserver.com.key'),
-    cert: fs.readFileSync('tls.testserver.com.crt'),
+    key: fs.readFileSync('tls.testserver.com.key.pem'),
+    cert: fs.readFileSync('tls.testserver.com.crt.pem'),
 };
 var rsahttpsServer = https.createServer(rsaOptions, handleHttpsRequest).listen(definitions.RSA_HTTPS_PORT, function(){
     //Callback triggered when server is successfully listening. Hurray!
     console.log("RSA Server listening on: https://localhost:%s", definitions.RSA_HTTPS_PORT);
 });
-
+*/
 
 // ---------------------------------
 // ECC cert with good cipher setting

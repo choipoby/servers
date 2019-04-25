@@ -4,7 +4,7 @@ var http = require('http');
 var https = require('https');
 var dispatcher = require('httpdispatcher');
 var parseRange = require("range-parser");
-var definitions = require("../Common/definitions.js");
+var definitions = require("./definitions.js");
 
 //--------------------------------------------------------------------------------
 // DISPACHERS
